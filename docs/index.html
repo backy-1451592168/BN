@@ -16,7 +16,8 @@
             margin: 0;
         }
         
-        .page-header-image{
+        @media screen and (min-device-width: 768px) {
+            .page-header-image{
             position: absolute;
             background-size: cover;
             background-position: center center;
@@ -28,6 +29,23 @@
                 -moz-filter: blur(3px);
                 -ms-filter: blur(3px);    
                     filter: blur(3px);
+            }
+        }
+        
+        @media screen and (max-device-width: 768px) {
+            .page-header-image{
+            position: absolute;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image:url('sj.jpg');
+            -webkit-filter: blur(3px);
+                -moz-filter: blur(3px);
+                -ms-filter: blur(3px);    
+                    filter: blur(3px);
+            }
         }
         .homepage {
 /*             height: 100vh; */
